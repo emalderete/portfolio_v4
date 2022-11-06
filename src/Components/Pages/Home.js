@@ -1,9 +1,12 @@
 import React from 'react';
+import Hero from '../Hero';
+import Navigation from '../Navigation';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Main page</h1>
+        <div className='body'>
+            <Hero></Hero>
+            <Navigation></Navigation>
         </div>
     );
 };

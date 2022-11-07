@@ -51,34 +51,3 @@ button {
 
 
 /*----------- Navigation ------------*/
-
-.nav {
-    display: flex;
-    position: absolute;
-    border: 1px solid red;
-    top: 36%;
-    left: 0;
-    flex-direction: column;
-}
-
-.navButtonTag {
-    background-color: #ffffff;
-    padding: 1rem;
-    font-family: 'Mojang';
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    text-align: start;
-}
-
-.navButtonTagText {
-    word-spacing: 0.5rem;
-    font-size: 120%;
-}
-
-.text {
-    display: none;
-}
-
-.navButtonTag:hover .text {
-    display: contents;
-}

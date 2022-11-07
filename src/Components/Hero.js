@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import Typed from 'typed.js';
 
 const Hero = () => {
+    const el = useRef(null);
+    const typed = useRef(null);
+
+    useEffect(()=>{
+        const options = {
+            strings: ["<h1>Hello World!</h1>",
+            "<h1>Hello World! My Name's Emanuel</h1>",
+            "<h1>Hello World! My Name's Emanuel<br/>A <span style='color: #ff8383'>Web Developer!</span></h1>"],
+            typeSpeed: 40,
+            startDelay: 300,
+            backDelay: 500,
+            showCursor: false
+        };
+        typed.current = new Typed(el.current, options);
+
+        return ()=>{
+            typed.current.destroy();
+        };
+    }, []);
+
     return (
         <div className='heroContainer'>
             <div className='hero'>
                 <div className='name'>
-                    <h1>Hello World! My Name's Emanuel<br/>A <span className='speachWebDeveloper'>Web Developer!</span></h1>
+                    <span ref={el}></span>
                 </div>
             </div>
         </div>

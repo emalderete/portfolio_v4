@@ -7,9 +7,9 @@ const Hero = () => {
 
     useEffect(()=>{
         const options = {
-            strings: ["<h1>Hello World!</h1>",
-            "<h1>Hello World! My Name's Emanuel</h1>",
-            "<h1>Hello World! My Name's Emanuel<br/>A <span style='color: #ff8383'>Web Developer!</span></h1>"],
+            strings: ["<h1 class='nameText'>Hello World!</h1>",
+            "<h1 class='nameText'>Hello World! My Name's Emanuel</h1>",
+            "<h1 class='nameText'>Hello World! My Name's Emanuel<br/>A <span style='color: #ff8383'>Web Developer!</span></h1>"],
             typeSpeed: 35,
             startDelay: 300,
             backDelay: 400,

@@ -21,8 +21,22 @@ const Navigation = () => {
                     <span className='navText'>Contact</span>
                 </div>
             </div>
-            <div className='modalWorks'>
-                <h1>works</h1>
+            <div className='navMobile'>
+                <div className='mobileButton'>
+                    <span><i className='fa-solid fa-bars'></i></span>
+                </div>
+            </div>
+            <div className='modal' id='modalWorks'>
+                <h1>Works</h1>
+            </div>
+            <div className='modal' id='modalAbout'>
+                <h1>About</h1>
+            </div>
+            <div className='modal' id='modalSkills'>
+                <h1>Skills</h1>
+            </div>
+            <div className='modal' id='modalContact'>
+                <h1>Contact</h1>
             </div>
         </div>
     );

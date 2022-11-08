@@ -99,17 +99,57 @@ button {
 }
 
 #contactButton {
-    background-color: #4b0aad;
+    background-color: #7c03bd;
+}
+
+.navMobile {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mobileButton {
+    font-size: 150%;
+    clip-path: polygon(57% 93%, 54% 98%, 50% 100%, 45% 98%, 42% 93%, 0 0, 100% 0);
+    background-color: #262626;
+    width: 9rem;
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: #dedddd;
+    padding-top: 0.5rem;
 }
 
 
 /*------------- Modals --------------*/
 
-.modalWorks {
+.modal {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    margin-left: -100%;
+}
+
+#modalWorks {
     background-color: #057d05;
+}
+
+#modalAbout {
+    background-color: #ff8383;
+}
+
+#modalSkills {
+    background-color: #ffd500;
+}
+
+#modalContact {
+    background-color: #7c03bd;
 }

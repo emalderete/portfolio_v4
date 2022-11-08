@@ -1,0 +1,14 @@
+@media (max-width: 920px) {
+    .nav {
+        display: none;
+    }
+    .nameText {
+        font-size: 4vw;
+        word-spacing: 2.5vw;
+        line-height: 8vw;
+    }
+    .navMobile {
+        opacity: 1;
+        pointer-events: all;
+    }
+}

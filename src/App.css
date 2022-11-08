@@ -51,3 +51,65 @@ button {
 
 
 /*----------- Navigation ------------*/
+
+.nav {
+    float: left;
+    position: absolute;
+    top: 30vh;
+}
+
+.navButton {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.6rem;
+    color: #262626;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 150ms;
+}
+
+.navText {
+    opacity: 1;
+    font-size: 1rem;
+    font-family: 'Mojang';
+    transition: 200ms;
+    display: none;
+}
+
+.navButton:hover {
+    width: 10rem;
+}
+
+.navButton:hover .navText {
+    display: contents;
+    padding-left: 1rem;
+}
+
+#workButton {
+    background-color: #057d05;
+}
+
+#aboutButton {
+    background-color: #ff8383;
+}
+
+#skillButton {
+    background-color: #ffd500;
+}
+
+#contactButton {
+    background-color: #4b0aad;
+}
+
+
+/*------------- Modals --------------*/
+
+.modalWorks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #057d05;
+}

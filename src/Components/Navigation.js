@@ -5,6 +5,7 @@ const Navigation = () => {
     const [showAbout, setShowAbout] = useState(false);
     const [showSkills, setShowSkills] = useState(false);
     const [showContact, setShowContact] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     function showWorksHandler(){
         showWorks ? setShowWorks(false) : setShowWorks(true);
@@ -20,7 +21,11 @@ const Navigation = () => {
 
     function showContactHandler(){
         showContact ? setShowContact(false) : setShowContact(true);
-    }
+    };
+
+    function showMobileMenuHandler() {
+        showMobileMenu ? setShowMobileMenu(false) : setShowMobileMenu(true);
+    };
 
     return (
         <div>
@@ -43,7 +48,7 @@ const Navigation = () => {
                 </div>
             </div>
             <div className='navMobile'>
-                <div className='mobileButton'>
+                <div className='mobileButton' onClick={showMobileMenuHandler}>
                     <span><i className='fa-solid fa-bars'></i></span>
                 </div>
             </div>
@@ -77,6 +82,25 @@ const Navigation = () => {
                 </div>
                 <div className='modalBody'>
                     <h1 className='modalTitle' id='modalTitleContact'>Contact</h1>
+                </div>
+            </div>
+            <div className={showMobileMenu ? 'mobileModal showMobileModal' : 'mobileModal'}>
+                <div className='mobileModalButtons'>
+                    <div>
+                        <span>Works</span>
+                    </div>
+                    <div>
+                        <span>Who I'm?</span>
+                    </div>
+                    <div>
+                        <span>My skills</span>
+                    </div>
+                    <div>
+                        <span>Contact me</span>
+                    </div>
+                </div>
+                <div className='mobileModalCloseButton' onClick={showMobileMenuHandler}>
+                    <span><i className='fa-solid fa-chevron-down'></i></span>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 /*-- Inicialización de página -*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -193,6 +194,7 @@ button {
 
 .modalTitle {
     height: 5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .modalBody {
@@ -203,24 +205,69 @@ button {
 
 #modalWorks,
 #modalTitleWorks {
-    background: #054e05;
-    background: linear-gradient(45deg, #054e05 15%, #057d05 100%);
+    background-color: #057d05;
 }
 
 #modalAbout,
 #modalTitleAbout {
-    background: #9f3636;
-    background: linear-gradient(45deg, #9f3636 22%, #ff8383 100%);
+    background-color: #ff8383;
 }
 
 #modalSkills,
 #modalTitleSkills {
-    background: #975c19;
-    background: linear-gradient(45deg, #975c19 22%, #ffd500 100%);
+    background-color: #ffd500;
 }
 
 #modalContact,
 #modalTitleContact {
-    background: #401756;
-    background: linear-gradient(45deg, #401756 22%, #7c03bd 100%);
+    background-color: #7c03bd;
+}
+
+.mobileModal {
+    position: absolute;
+    background-color: #262626;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -250%;
+    transition: 900ms;
+}
+
+.showMobileModal {
+    margin-top: 0;
+}
+
+.mobileModalButtons {
+    color: #fff;
+    font-family: 'Mojang';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20vh 0;
+}
+
+.mobileModalButtons div {
+    margin: 10vh;
+    margin: 0 30%;
+    word-spacing: 0.3rem;
+}
+
+.mobileModalCloseButton {
+    align-self: flex-end;
+    color: #fff;
+    position: absolute;
+    clip-path: polygon(57% 93%, 54% 98%, 50% 100%, 45% 98%, 42% 93%, 0 0, 100% 0);
+    background-color: #474747;
+    width: 10rem;
+    height: 4rem;
+    transform: rotateZ(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
 }

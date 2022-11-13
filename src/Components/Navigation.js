@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import programmingImage from '../Img/programming.svg';
 
 const Navigation = () => {
     // Conjunto de estados que controlan el comportamiento de las ventanas modal.
@@ -57,7 +58,7 @@ const Navigation = () => {
                 </div>
             </div>
             {/* ----------- Botón de navegación móvil --------- */}
-            <div className='navMobile'>
+            <div className={showMobileMenu ? 'navMobile hideMobileButton' : 'navMobile'}>
                 <div className='mobileButton' onClick={showMobileMenuHandler}>
                     <span><i className='fa-solid fa-bars'></i></span>
                 </div>
@@ -69,6 +70,18 @@ const Navigation = () => {
                 </div>
                 <div className='modalBody'>
                     <h1 className='modalTitle' id='modalTitleWorks'>Works</h1>
+                    <div className='modalWorksIntro'>
+                        <div className='modalWorksIntroTexts'>
+                            <h2 className='titles'>My creations</h2>
+                            <p className='texts'>Works developed by me or which I've participated in it's development.</p>
+                        </div>
+                        <div className='modalWorksIntroImg'>
+                            <img src={programmingImage} alt=''></img>
+                        </div>
+                    </div>
+                    <div className='projects'>
+
+                    </div>
                 </div>
             </div>
             <div className={showAbout ? 'modal showModal' : 'modal'} id='modalAbout'>
@@ -76,7 +89,7 @@ const Navigation = () => {
                     <span><i className='fa-solid fa-chevron-right'></i></span>
                 </div>
                 <div className='modalBody'>
-                    <h1 className='modalTitle' id='modalTitleAbout'>About</h1>
+                    <h1 className='modalTitle' id='modalTitleAbout'>About me</h1>
                 </div>
             </div>
             <div className={showSkills ? 'modal showModal' : 'modal'} id='modalSkills'>

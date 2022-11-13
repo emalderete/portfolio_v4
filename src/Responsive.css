@@ -5,6 +5,12 @@
     .modalBody {
         width: 93vw;
     }
+    .texts {
+        font-size: 150%;
+    }
+    .titles {
+        font-size: 350%;
+    }
 }
 
 @media (max-width: 920px) {
@@ -37,6 +43,24 @@
     .modalTitle {
         font-size: 3.5vh;
         padding-top: 2.5vh;
+    }
+    .texts {
+        font-size: 100%;
+    }
+    .titles {
+        font-size: 250%;
+    }
+    .modalWorksIntro {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 512px) {
+    .titles {
+        font-size: 180%;
+    }
+    .texts {
+        font-size: 100%;
     }
 }
 

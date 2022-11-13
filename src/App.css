@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
 }
 
 @font-face {
@@ -211,6 +212,12 @@ button {
     width: 95vw;
     margin-right: 50rem;
     background-color: #dfdfdf;
+    overflow: auto;
+}
+
+.modalBody::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
 }
 
 .modalWorksIntro {
@@ -318,4 +325,69 @@ button {
     justify-content: center;
     align-items: center;
     font-size: 150%;
+}
+
+
+/* -------- Estilos de tarjetas de proyectos --------- */
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projectCardOverlay {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    transition: 400ms;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectCardOverlayContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    width: 100%;
+    transition: 400ms;
+    display: flex;
+}
+
+.projectCardOverlayContent a {
+    color: #222222;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0 0 5px #ffffff);
+}
+
+.projectName {
+    margin-right: 0.5rem;
+}
+
+.projectCardOverlay:hover {
+    background-color: #eaeaea61;
+    backdrop-filter: blur(3px);
+}
+
+.projectCardOverlay:hover .projectCardOverlayContent {
+    opacity: 1;
+}
+
+.projectCard {
+    position: relative;
+    width: 27rem;
+    height: 15rem;
+    padding: 1rem;
+}
+
+.projectCard img {
+    width: inherit;
+    height: inherit;
 }

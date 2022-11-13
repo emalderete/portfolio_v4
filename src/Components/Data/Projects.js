@@ -1,11 +1,16 @@
 export const projects = [{
+    name : 'Seven37.Online',
+    image : 'https://i.ibb.co/n13kkGj/project-seven.jpg',
+    linkPage : 'https://s3v3n37.online/index.php/s3b3n37-devs/'
+},
+{
     name : 'Behind The Code',
     image : 'https://i.ibb.co/yB1ppNg/project1-1.jpg',
     linkPage : 'https://behindthecode.netlify.app'
 },
 {
     name : 'Steam Rolling Code',
-    image1 : 'https://i.ibb.co/fHQgFpW/project2-1.jpg',
+    image : 'https://i.ibb.co/fHQgFpW/project2-1.jpg',
     linkPage : 'https://steamrc.netlify.app'
 },
 {

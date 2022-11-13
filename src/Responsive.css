@@ -11,6 +11,10 @@
     .titles {
         font-size: 350%;
     }
+    .projectCard {
+        width: 20rem;
+        height: 12rem;
+    }
 }
 
 @media (max-width: 920px) {

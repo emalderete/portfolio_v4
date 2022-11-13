@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import programmingImage from '../Img/programming.svg';
+import { projects } from './Data/Projects';
 
 const Navigation = () => {
     // Conjunto de estados que controlan el comportamiento de las ventanas modal.
@@ -8,7 +9,6 @@ const Navigation = () => {
     const [showSkills, setShowSkills] = useState(false);
     const [showContact, setShowContact] = useState(false);
     const [showMobileMenu, setShowMobileMenu] = useState(false);
-
 
     // Conjunto de funciones que controlan los estados y el comportamiento de las diferentes ventanas modal.
     function showWorksHandler(){
@@ -80,7 +80,20 @@ const Navigation = () => {
                         </div>
                     </div>
                     <div className='projects'>
-
+                        { projects.map((project, index)=>{
+                        return(
+                            <div className='projectCard' key={index}>
+                                <div className='projectCardOverlay'>
+                                    <div className='projectCardOverlayContent'>
+                                        <a href={project.linkPage} rel='noopener noreferer' target='blank'>
+                                            <h5 className='projectName'>{project.name}</h5>
+                                            <i className='fa-solid fa-arrow-up-right-from-square'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <img src={project.image} alt=''/>
+                            </div>
+                        )})}
                     </div>
                 </div>
             </div>

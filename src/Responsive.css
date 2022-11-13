@@ -1,6 +1,19 @@
+@media (max-width: 1024px) {
+    .closeModalButton {
+        width: 7vw;
+    }
+    .modalBody {
+        width: 93vw;
+    }
+}
+
 @media (max-width: 920px) {
     .nav {
         display: none;
+    }
+    .mobileModal {
+        opacity: 1;
+        pointer-events: all;
     }
     .nameText {
         font-size: 4vw;
@@ -10,5 +23,25 @@
     .navMobile {
         opacity: 1;
         pointer-events: all;
+    }
+}
+
+@media (max-width: 640px) {
+    .closeModalButton {
+        width: 11vw;
+        height: 11vh;
+    }
+    .modalBody {
+        width: 100vw;
+    }
+    .modalTitle {
+        font-size: 3.5vh;
+        padding-top: 2.5vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .closeModalButton {
+        width: 15vw;
     }
 }

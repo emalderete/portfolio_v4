@@ -170,6 +170,7 @@ button {
     height: 100vh;
     margin-left: -100%;
     transition: 500ms;
+    z-index: 2;
 }
 
 .showModal {
@@ -179,8 +180,8 @@ button {
 .closeModalButton {
     position: absolute;
     right: 0;
-    width: 5rem;
-    height: 5rem;
+    width: 5vw;
+    height: 10vh;
     background-color: #00000037;
     display: flex;
     justify-content: center;
@@ -189,17 +190,20 @@ button {
 }
 
 .closeModalButton span {
-    font-size: 250%;
+    font-size: 5vh;
 }
 
 .modalTitle {
-    height: 5rem;
-    font-family: 'Poppins', sans-serif;
+    height: 8.5vh;
+    font-family: 'Mojang';
+    font-size: 5vh;
+    padding: 1.5vh 0 0 5vw;
 }
 
 .modalBody {
     height: 100%;
-    width: 94.8%;
+    width: 95vw;
+    margin-right: 50rem;
     background-color: #c1c1c1;
 }
 
@@ -224,6 +228,8 @@ button {
 }
 
 .mobileModal {
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     background-color: #262626;
     width: 100%;
@@ -234,6 +240,7 @@ button {
     justify-content: center;
     margin-top: -250%;
     transition: 900ms;
+    z-index: 1;
 }
 
 .showMobileModal {
@@ -255,6 +262,8 @@ button {
     margin: 10vh;
     margin: 0 30%;
     word-spacing: 0.3rem;
+    cursor: pointer;
+    filter: drop-shadow(0 0 8px #c6c5c5);
 }
 
 .mobileModalCloseButton {

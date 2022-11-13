@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 
 const Navigation = () => {
+    // Conjunto de estados que controlan el comportamiento de las ventanas modal.
     const [showWorks, setShowWorks] = useState(false);
     const [showAbout, setShowAbout] = useState(false);
     const [showSkills, setShowSkills] = useState(false);
     const [showContact, setShowContact] = useState(false);
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
+
+    // Conjunto de funciones que controlan los estados y el comportamiento de las diferentes ventanas modal.
     function showWorksHandler(){
         showWorks ? setShowWorks(false) : setShowWorks(true);
     };
@@ -27,8 +30,14 @@ const Navigation = () => {
         showMobileMenu ? setShowMobileMenu(false) : setShowMobileMenu(true);
     };
 
+    function mobileNavigationAuxiliar(handler) {
+        handler();
+        showMobileMenuHandler();
+    };
+
     return (
         <div>
+            {/* ----------- Botones de navegación de escritorio --------- */}
             <div className='nav' onLoad={()=>{window.scrollY(0)}}>
                 <div className='navButton' id='workButton' onClick={showWorksHandler}>
                     <span className='navButtonChild'><i className='fa-solid fa-briefcase'></i></span>
@@ -47,11 +56,13 @@ const Navigation = () => {
                     <span className='navText'>Contact</span>
                 </div>
             </div>
+            {/* ----------- Botón de navegación móvil --------- */}
             <div className='navMobile'>
                 <div className='mobileButton' onClick={showMobileMenuHandler}>
                     <span><i className='fa-solid fa-bars'></i></span>
                 </div>
             </div>
+            {/* ----------- ventanas modal --------- */}
             <div className={showWorks ? 'modal showModal' : 'modal'} id='modalWorks'>
                 <div type='button' className='closeModalButton' onClick={showWorksHandler}>
                     <span><i className='fa-solid fa-chevron-right'></i></span>
@@ -84,21 +95,23 @@ const Navigation = () => {
                     <h1 className='modalTitle' id='modalTitleContact'>Contact</h1>
                 </div>
             </div>
+            {/* ----------- menu móvil --------- */}
             <div className={showMobileMenu ? 'mobileModal showMobileModal' : 'mobileModal'}>
                 <div className='mobileModalButtons'>
-                    <div>
+                    <div onClick={()=>{mobileNavigationAuxiliar(showWorksHandler)}}>
                         <span>Works</span>
                     </div>
-                    <div>
+                    <div onClick={()=>{mobileNavigationAuxiliar(showAboutHandler)}}>
                         <span>Who I'm?</span>
                     </div>
-                    <div>
+                    <div onClick={()=>{mobileNavigationAuxiliar(showSkillsHandler)}}>
                         <span>My skills</span>
                     </div>
-                    <div>
+                    <div onClick={()=>{mobileNavigationAuxiliar(showContactHandler)}}>
                         <span>Contact me</span>
                     </div>
                 </div>
+            {/* ----------- Botón de cierre del menu móvil --------- */}
                 <div className='mobileModalCloseButton' onClick={showMobileMenuHandler}>
                     <span><i className='fa-solid fa-chevron-down'></i></span>
                 </div>

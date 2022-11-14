@@ -1,3 +1,17 @@
+@media (max-width: 1240px) {
+    .aboutTitle {
+        font-size: 350%;
+    }
+    .aboutText {
+        font-size: 110%;
+        line-height: 1.8rem;
+    }
+    #aboutToOfferList {
+        font-size: 110%;
+        line-height: 1.8rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .closeModalButton {
         width: 7vw;
@@ -50,6 +64,33 @@
     .workInProgressBody p {
         margin-bottom: 2rem;
     }
+    .aboutIntro {
+        flex-wrap: wrap-reverse;
+    }
+    .aboutStudies {
+        flex-wrap: wrap;
+    }
+    .aboutToOffer {
+        flex-wrap: wrap-reverse;
+    }
+    .aboutDifference {
+        flex-wrap: wrap;
+    }
+    .aboutTrust {
+        flex-wrap: wrap-reverse;
+    }
+    .aboutImg {
+        width: 60%;
+        height: 50%;
+    }
+    #aboutIntroImg {
+        width: 70%;
+        height: 60%;
+    }
+    .aboutTextContainer {
+        width: 70%;
+        margin-top: 3rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -86,6 +127,12 @@
         width: 21rem;
         height: 10rem;
     }
+    .aboutText {
+        font-weight: 200;
+    }
+    #aboutToOfferList {
+        font-weight: 200;
+    }
 }
 
 @media (max-width: 420px) {
@@ -102,5 +149,14 @@
     .projectCard {
         width: 80vw;
         height: 40vw;
+    }
+    .aboutText {
+        line-height: 1.5rem;
+    }
+    .aboutTextContainer {
+        width: 90%;
+    }
+    #aboutToOfferList {
+        line-height: 1.5rem;
     }
 }

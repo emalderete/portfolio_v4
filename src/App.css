@@ -434,3 +434,70 @@ button {
     height: inherit;
     box-shadow: 2px 2px 7px #222222;
 }
+
+
+/*--------- Acerca de mi ---------*/
+
+.aboutIntro {
+    display: flex;
+    padding: 5rem 0;
+    justify-content: space-evenly;
+}
+
+.aboutTextContainer {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 40%;
+}
+
+.aboutTitle {
+    font-size: 500%;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.aboutText {
+    font-size: 130%;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+
+.aboutImg {
+    width: 30%;
+    height: 30%;
+}
+
+#aboutIntroImg {
+    width: 40%;
+    height: 40%;
+}
+
+.aboutStudies {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5rem 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.aboutToOffer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem 0;
+}
+
+#aboutToOfferList {
+    margin-left: 1.5rem;
+    font-size: 130%;
+    line-height: 2.2rem;
+}
+
+.aboutDifference {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem 0;
+}
+
+.aboutTrust {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem 0;
+}

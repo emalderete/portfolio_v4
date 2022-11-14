@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import programmingImage from '../Img/programming.svg';
+import aboutImage from '../Img/about.svg';
+import studyImage from '../Img/study.svg';
+import toOffer from '../Img/toOffer.svg';
+import highlight from '../Img/highlight.svg';
+import deal from '../Img/deal.svg';
 import { projects } from './Data/Projects';
 
 const Navigation = () => {
@@ -114,6 +119,62 @@ const Navigation = () => {
                 </div>
                 <div className='modalBody'>
                     <h1 className='modalTitle' id='modalTitleAbout'>About me</h1>
+                    <div className='aboutIntro'>
+                        <div className='aboutTextContainer'>
+                            <h2 className='aboutTitle'>Who I am?</h2>
+                            <p className='aboutText'>I am passionate about computers, components, video games and music. In my free time I enjoy a good coffee while I code.
+                            <br/>My goals are to continue learning new technologies and developing skills that allow me to expand my horizons more and more.
+                             I firmly believe that success is an attainable goal through constant progress and advancement.</p>
+                        </div>
+                        <img className='aboutImg' id='aboutIntroImg' src={aboutImage} alt='' />
+                    </div>
+                    <div className='aboutStudies'>
+                        <img className='aboutImg' src={studyImage} alt='' />
+                        <div className='aboutTextContainer'>
+                            <h2 className='aboutTitle'>Where I formed?</h2>
+                            <p className='aboutText'>Throughout my life I have studied in different places, some were unfinished careers,
+                             I have taken on different assignments but none have aroused my passion as much as programming.<br/>
+                             My main training was at Rolling Code School where I learned FullStack development and HTML 5, CSS 3, 
+                             JavaScript and React technologies, among other technologies. 
+                             At that moment I felt that I discovered a new world that was previously hidden from my eyes, programming is something that everyone should learn at some point in their life.</p>
+                        </div>
+                    </div>
+                    <div className='aboutToOffer'>
+                        <div className='aboutTextContainer'>
+                            <h2 className='aboutTitle'>What can I offer?</h2>
+                            <p className='aboutText'>My motivation for personal and professional development drives me to accept new challenges that allow me to gain new knowledge, 
+                            therefore I can offer my talent for the development of innovative solutions that help optimize my clients' growth.
+                            Some features I can develop are:</p>
+                            <ul id='aboutToOfferList'>
+                                <li>Development of forms and their corresponding validations</li>
+                                <li>Login and register feature</li>
+                                <li>CRUD system (Create, Read, Update, Delete) for services that require the loading, modification and deletion of data</li>
+                                <li>Creation and maintenance of databases</li>
+                                <li>Integration of additional services or elements embedded in the same website (maps, players, etc.)</li>
+                                <li>Custom design and aesthetics (animations, visual effects, etc.)</li>
+                                <li>Intuitive user interface design</li>
+                            </ul>
+                        </div>
+                        <img className='aboutImg' src={toOffer} alt='' />
+                    </div>
+                    <div className='aboutDifference'>
+                        <img className='aboutImg' src={highlight} alt='' />
+                        <div className='aboutTextContainer'>
+                            <h2 className='aboutTitle'>What differentiates me from the others?</h2>
+                            <p className='aboutText'>I maintain a persevering and active attitude in problem solving until I obtain a solution or favorable results. 
+                            When a situation arises that hinders my progress, I do not rest until I overcome the obstacle and learn from it. 
+                            On the other hand, I consider myself a creative person, so I always think about how to improve the aesthetic aspect of my work.</p>
+                        </div>
+                    </div>
+                    <div className='aboutTrust'>
+                        <div className='aboutTextContainer'>
+                            <h2 className='aboutTitle'>Why trust in me?</h2>
+                            <p className='aboutText'>My work includes my own personal guarantee with which I ensure customer satisfaction through a quality product. 
+                            If said product does not meet expectations or does not ensure satisfaction, 
+                            I comply with my guarantee by reimbursing the total or partial amount paid or making adjustments needed at no additional charge as convenient.</p>
+                        </div>
+                        <img className='aboutImg' src={deal} alt='' />
+                    </div>
                 </div>
             </div>
             <div className={showSkills ? 'modal showModal' : 'modal'} id='modalSkills'>

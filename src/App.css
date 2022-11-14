@@ -346,6 +346,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .projectCardOverlayContent {
@@ -364,7 +366,7 @@ button {
     width: 100%;
     display: flex;
     justify-content: center;
-    filter: drop-shadow(0 0 5px #ffffff);
+    filter: drop-shadow(0 0 4px #ffffff);
 }
 
 .projectName {
@@ -372,8 +374,8 @@ button {
 }
 
 .projectCardOverlay:hover {
-    background-color: #eaeaea61;
-    backdrop-filter: blur(3px);
+    background-color: #ffffff13;
+    backdrop-filter: blur(5px);
 }
 
 .projectCardOverlay:hover .projectCardOverlayContent {
@@ -390,4 +392,45 @@ button {
 .projectCard img {
     width: inherit;
     height: inherit;
+    box-shadow: 2px 2px 5px #828282;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.workInProgress {
+    background-color: #474747;
+    margin-top: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.workInProgressBody {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 8vw;
+    color: #ffffff;
+}
+
+.workInProgressBody h2 {
+    font-weight: 200;
+    font-size: 400%;
+}
+
+.workInProgressBody p {
+    font-size: 200%;
+    font-weight: 200;
+    margin-right: 1rem;
+}
+
+.progressImgContainer {
+    width: 27rem;
+    height: 15rem;
+}
+
+.progressImg {
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: inherit;
+    height: inherit;
+    box-shadow: 2px 2px 7px #222222;
 }

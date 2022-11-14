@@ -17,4 +17,9 @@ export const projects = [{
     name : 'Curriculum Vitae 2022',
     image : 'https://i.ibb.co/mRms22N/project3-1.jpg',
     linkPage : 'https://curriculum-vitae2022.netlify.app/'
+},
+{
+    name : 'Portfolio (first version)',
+    image : 'https://i.ibb.co/M9BwDLx/porfolio-old.jpg',
+    linkPage : 'https://emalderete-portfolio.netlify.app/'
 }];

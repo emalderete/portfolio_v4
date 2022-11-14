@@ -15,6 +15,16 @@
         width: 20rem;
         height: 12rem;
     }
+    .progressImgContainer {
+        width: 24rem;
+        height: 12rem;
+    }
+    .workInProgressBody p {
+        font-size: 120%;
+    }
+    .workInProgressBody h2 {
+        font-size: 320%;
+    }
 }
 
 @media (max-width: 920px) {
@@ -33,6 +43,12 @@
     .navMobile {
         opacity: 1;
         pointer-events: all;
+    }
+    .workInProgressBody {
+        flex-wrap: wrap;
+    }
+    .workInProgressBody p {
+        margin-bottom: 2rem;
     }
 }
 
@@ -66,10 +82,25 @@
     .texts {
         font-size: 100%;
     }
+    .progressImgContainer {
+        width: 21rem;
+        height: 10rem;
+    }
 }
 
 @media (max-width: 420px) {
     .closeModalButton {
         width: 15vw;
+    }
+    .workInProgressBody h2 {
+        font-size: 270%;
+    }
+    .progressImgContainer {
+        width: 80vw;
+        height: 40vw;
+    }
+    .projectCard {
+        width: 80vw;
+        height: 40vw;
     }
 }

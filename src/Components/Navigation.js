@@ -95,6 +95,17 @@ const Navigation = () => {
                             </div>
                         )})}
                     </div>
+                    <div className='workInProgress'>
+                        <div className='workInProgressBody'>
+                            <div>
+                                <h2>Work in progress...</h2>
+                                <p>I'm working in a new project right now, an e-commerce site as my institute final exam.</p>
+                            </div>
+                            <div className='progressImgContainer'>
+                                <img className='progressImg' src='https://i.ibb.co/B6XwSLJ/e-commerce.jpg' alt=''></img>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className={showAbout ? 'modal showModal' : 'modal'} id='modalAbout'>

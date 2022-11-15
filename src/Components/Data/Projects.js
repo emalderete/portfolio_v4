@@ -23,3 +23,12 @@ export const projects = [{
     image : 'https://i.ibb.co/M9BwDLx/porfolio-old.jpg',
     linkPage : 'https://emalderete-portfolio.netlify.app/'
 }];
+
+export const objectSkills = [
+    {name : "HTML 5", icon : "fa-brands fa-html5 icons", value : 90},
+    {name : "CSS 3", icon : "fa-brands fa-css3 icons", value : 72},
+    {name : "JavaScript", icon : "fa-brands fa-square-js icons", value : 67},
+    {name : "ReactJS", icon : "fa-brands fa-react icons", value : 70},
+    {name : "Bootstrap", icon : "fa-brands fa-bootstrap icons", value : 91},
+    {name : "NodeJS", icon : "fa-brands fa-node icons", value : 54}
+];

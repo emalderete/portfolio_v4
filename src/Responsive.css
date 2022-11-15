@@ -10,6 +10,12 @@
         font-size: 110%;
         line-height: 1.8rem;
     }
+    .skillsTitle {
+        font-size: 350%;
+    }
+    .skillsText {
+        font-size: 140%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -91,6 +97,30 @@
         width: 70%;
         margin-top: 3rem;
     }
+    .skillsTitle {
+        font-size: 300%;
+    }
+    .skillsIntro {
+        padding: 5rem 1rem;
+    }
+    .skillsText {
+        font-size: 120%;
+        line-height: 1.6rem;
+    }
+    .skillsMeter {
+        transform: scale(0.75);
+        margin: 0;
+    }
+    @-moz-document url-prefix() {
+        .skillsMeter {
+            width: 20rem;
+            height: 20rem;
+        }
+        .skillsMeterInner {
+            width: 15rem;
+            height: 15rem;
+        }
+    }
 }
 
 @media (max-width: 640px) {
@@ -113,6 +143,13 @@
     }
     .modalWorksIntro {
         padding: 1rem 2rem;
+    }
+    .skillsTitle {
+        font-size: 220%;
+    }
+    .skillsText {
+        font-size: 105%;
+        font-weight: 200;
     }
 }
 

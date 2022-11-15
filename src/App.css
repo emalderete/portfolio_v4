@@ -45,6 +45,18 @@ button {
     }
 }
 
+@keyframes spinning {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes progressAnim {
+    0% {
+        stroke-dasharray: 2000;
+    }
+}
+
 
 /*----------- Hero ------------*/
 
@@ -500,4 +512,130 @@ button {
     display: flex;
     justify-content: space-evenly;
     margin: 8rem 0;
+}
+
+.skillsContent {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.skillsIntro {
+    background-color: #474747;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 2rem;
+}
+
+.skillsIntroTextContainer {
+    width: 60%;
+}
+
+.skillsTitle {
+    font-size: 500%;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.reactLogo {
+    width: 25%;
+    height: 25%;
+    animation: spinning infinite 25s steps(2000);
+}
+
+.skillsText {
+    font-size: 180%;
+    color: #ffffff;
+}
+
+.skillsList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #474747;
+    width: 100%;
+}
+
+.skillsMeter {
+    width: 17rem;
+    height: 17rem;
+    margin: 3rem;
+    position: relative;
+}
+
+.skillsMeterOuter {
+    box-shadow: 5px 5px 10px #4a4a4a, -2px -2px 5px #6d6d6d;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsMeterInner {
+    border-radius: 100%;
+    box-shadow: inset 5px 5px 10px #4a4a4a, inset -2px -2px 12px #666363;
+    height: 12.5rem;
+    width: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+}
+
+.progressColor {
+    position: absolute;
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 35px;
+    stroke-dashoffset: 2000;
+    stroke-dasharray: 2730;
+    animation: progressAnim 1700ms linear forwards;
+}
+
+.progressMeter {
+    position: absolute;
+    transform: rotateZ(-90deg);
+}
+
+.icons {
+    font-size: 500%;
+}
+
+.skillNameDisplayed {
+    font-size: 150%;
+    color: #ffffff;
+    text-shadow: 1.5px 1.5px 4px #373737;
+}
+
+.percentageDisplayed {
+    font-size: 150%;
+    color: #ffffff;
+    text-shadow: 1.5px 1.5px 4px #373737;
+}
+
+.fa-html5 {
+    color: #e45a3f;
+}
+
+.fa-css3 {
+    color: #01aeea;
+}
+
+.fa-square-js {
+    color: #ead41c;
+}
+
+.fa-bootstrap {
+    color: #7d11f0;
+}
+
+.fa-react {
+    color: #00d6fe;
+}
+
+.fa-node {
+    color: #63b649;
 }

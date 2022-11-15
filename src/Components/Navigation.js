@@ -5,7 +5,8 @@ import studyImage from '../Img/study.svg';
 import toOffer from '../Img/toOffer.svg';
 import highlight from '../Img/highlight.svg';
 import deal from '../Img/deal.svg';
-import { projects } from './Data/Projects';
+import reactLogo from '../Img/logo512.png';
+import { projects, objectSkills } from './Data/Projects';
 
 const Navigation = () => {
     // Conjunto de estados que controlan el comportamiento de las ventanas modal.
@@ -39,6 +40,10 @@ const Navigation = () => {
     function mobileNavigationAuxiliar(handler) {
         handler();
         showMobileMenuHandler();
+    };
+
+    function calcPercentage(value) {
+        return 730 / 100 * value;
     };
 
     return (
@@ -183,6 +188,39 @@ const Navigation = () => {
                 </div>
                 <div className='modalBody'>
                     <h1 className='modalTitle' id='modalTitleSkills'>Skills</h1>
+                    <div className='skillsContent'>
+                        <div className='skillsIntro'>
+                            <div className='skillsIntroTextContainer'>
+                                <h2 className='skillsTitle'>I specialize in React.js</h2>
+                                <p className='skillsText'>This site was developed in React but I know another different technologies</p>
+                            </div>
+                            <img className='reactLogo' src={reactLogo} alt='' />
+                        </div>
+                        <h2 style={{backgroundColor : '#474747', textAlign : 'center', paddingTop : '5rem'}} className='skillsTitle'>Here is my skills level</h2>
+                        <div className='skillsList'>
+                        { objectSkills.map((skill, index)=>{
+                            return(
+                                <div key={index} className='skillsMeter'>
+                                    <div className='skillsMeterOuter'>
+                                        <svg className='progressMeter' xmlns='http://www.w3.org/2000/svg' version='1.1' width='300px' height='300px'>
+                                            <defs>
+                                               <linearGradient id='GradientColor'>
+                                                  <stop offset='0%' stopColor='#e91e63' />
+                                                  <stop offset='100%' stopColor='#673ab7' />
+                                               </linearGradient>
+                                            </defs>
+                                            <circle style={{strokeDasharray: 2000 + calcPercentage(skill.value)}} className='progressColor' cx='150' cy='150' r='118' strokeLinecap='round' />
+                                        </svg>
+                                        <div className='skillsMeterInner'>
+                                            <div><i className={skill.icon}></i></div>
+                                            <div className='skillNameDisplayed'>{skill.name}</div>
+                                            <div className='percentageDisplayed'>{skill.value}%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                        )})}
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className={showContact ? 'modal showModal' : 'modal'} id='modalContact'>

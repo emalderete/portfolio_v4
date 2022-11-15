@@ -155,7 +155,7 @@ const Navigation = () => {
                                 <li>Login and register feature</li>
                                 <li>CRUD system (Create, Read, Update, Delete) for services that require the loading, modification and deletion of data</li>
                                 <li>Creation and maintenance of databases</li>
-                                <li>Integration of additional services or elements embedded in the same website (maps, players, etc.)</li>
+                                <li>Integration of additional services or elements embedded in the same website (maps, media players, etc.)</li>
                                 <li>Custom design and aesthetics (animations, visual effects, etc.)</li>
                                 <li>Intuitive user interface design</li>
                             </ul>
@@ -229,6 +229,20 @@ const Navigation = () => {
                 </div>
                 <div className='modalBody'>
                     <h1 className='modalTitle' id='modalTitleContact'>Contact</h1>
+                    <div className='contactContent'>
+                        <div className='contactTextContainer'>
+                            <h2 className='contactTitle'>Thanks for your visit!</h2>
+                            <p className='contactText'>You can contact me through my social media</p>
+                        </div>
+                        <div className='contacts'>
+                            <ul className='contactsList'>
+                                <li><a className='link' href='https://www.linkedin.com/in/emanuel-alderete95/' target='_blank' rel='noopener noreferrer'><i className='fa-brands fa-linkedin'></i></a></li>
+                                <li><a className='link' href='https://github.com/emalderete' target='_blank' rel='noopener noreferrer'><i className='fa-brands fa-square-github'></i></a></li>
+                                <li><a className='link' href='https://www.facebook.com/emalderete77' target='_blank' rel='noopener noreferrer'><i className='fa-brands fa-square-facebook'></i></a></li>
+                                <li><a className='link' href='https://www.instagram.com/nemeck7/' target='_blank' rel='noopener noreferrer'><i className='fa-brands fa-square-instagram'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* ----------- menu móvil --------- */}

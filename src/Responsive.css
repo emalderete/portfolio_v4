@@ -121,6 +121,15 @@
             height: 15rem;
         }
     }
+    .contactTitle {
+        font-size: 350%;
+    }
+    .contactText {
+        font-size: 140%;
+    }
+    .contactsList {
+        font-size: 450%;
+    }
 }
 
 @media (max-width: 640px) {
@@ -150,6 +159,17 @@
     .skillsText {
         font-size: 105%;
         font-weight: 200;
+    }
+    .contactTitle {
+        font-size: 290%;
+        margin-bottom: 1rem;
+    }
+    .contactText {
+        font-size: 110%;
+        font-weight: 200;
+    }
+    .contactsList {
+        font-size: 400%;
     }
 }
 
@@ -195,5 +215,14 @@
     }
     #aboutToOfferList {
         line-height: 1.5rem;
+    }
+    .contactTitle {
+        font-size: 210%;
+    }
+    .contactText {
+        font-size: 100%;
+    }
+    .contactsList {
+        font-size: 250%;
     }
 }
